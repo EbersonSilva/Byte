@@ -10,6 +10,7 @@
   --black-color: #000;
   --white-color: #fff;
   --base-color: #0007e0;
+  --base-second-color:#0c8af7;
 
   /* Font */
   --body-font: 'Public Sans', sans-serif;
@@ -28,7 +29,7 @@ header {
 }
 
 .navegacao {
-  background-color: var(--base-color);
+  background-color: var(--base-second-color);
   padding: 0.5rem;
   z-index: 100;
 }
@@ -46,7 +47,7 @@ nav div .navbar-nav a {
 }
 .btn-contact {
   font: 600 var(--subtitle-font-size) var(--body-font);
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: var(--white-color);
   text-decoration: none;
   border-radius: 0.8rem;
@@ -70,7 +71,7 @@ nav div .nav-link::after {
   left: 0%;
   transition: 0.2s;
   position: absolute;
-  bottom: 0.3rem;
+  bottom: 0rem;
 }
 
 nav div .nav-link:hover::after {
@@ -81,10 +82,14 @@ nav div .nav-link:hover::after {
 /* Seção Inicio */
 
 .inicio {
+  margin-top: 4.5rem;
+}
+.inicio{
   background: url(images/inicio.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  
 }
 
 /* configuração do h1 */
@@ -102,9 +107,19 @@ nav div .nav-link:hover::after {
   font-weight: 400;
 }
 
-.inicio .container {
-  margin-top: 4.5rem;
+.btn-inicio{
+  background-color: var(--base-second-color);
+  color: var(--white-color);
+  padding: 0.75rem;
+  border: none;
 }
+.btn-inicio:hover{
+  background-color: var(--base-color);
+}
+
+
+
+
 /* 
 .divider-1 {
   height: 3px;
