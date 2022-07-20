@@ -32,7 +32,7 @@
 
   </head>
   <body>
-    <header class="navegacao fixed-top">
+    <header class="header fixed-top">
       <nav class="navbar navbar-expand-lg navbar-light container">
         <div class="container-fluid">
           <a class="navbar-brand logo" href="#"><img src="images/logo-v3.png" alt=""></a>
@@ -52,15 +52,13 @@
             id="navbarNavAltMarkup">
               <ul class="nav navbar-nav justify-content-end">
               <li class="nav-item " >
-                <a class="nav-link text-light" aria-current="page" href="#">Inicio</a></li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="#">O que fazemos</a></li>  
+                <a class="nav-link text-light" href="#home">Inicio</a></li>
+                <li class="nav-item">
+                 <a class="nav-link text-light" href="#about">Sobre</a></li>
               <li class="nav-item " >
-                <a class="nav-link text-light" href="#">Como fazemos</a></li>
-               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Quem somos</a></li>
+                <a class="nav-link text-light" href="#services">Serviços</a></li>
               <li class="nav-item">
-                <a class="nav-link text-light" href="#">Contato</a></li>
+                <a class="nav-link text-light" href="#contact">Contato</a></li>
             </ul>
              <span class="nav-item"><a
               
@@ -76,14 +74,14 @@
         </div>
       </nav>
     </header>
-
-    <section class="inicio" >
+<main>
+    <section class="section" id="home" >
       <div class="container">
         <div class="row align-items-md-stretch">
           <div class="col-md-6">
             <div class="h-100 p-5 rounded-3">
               <h2 class="title">Promovemos o sucesso de nossos clientes</h2>
-              <p class="subtitle">Através do uso da tecnologia da informação, facilitamos o dia-a-dia de nossos clientes, trazendo mais eficiência no momento de acessar, produzir, enviar e gerenciar dados, melhorando processos e consequentemente o crescimento de suas empresas e organizações.</p>
+              <p class="lead subtitle ">Através do uso da tecnologia da informação, facilitamos o dia-a-dia de nossos clientes, trazendo mais eficiência no momento de acessar, produzir, enviar e gerenciar dados, melhorando processos e consequentemente o crescimento de suas empresas e organizações.</p>
               <button class="btn-inicio rounded-3" type="button">Clique para saber mais <i class="bi bi-chevron-right"></i>
               </button>
             </div>
@@ -93,9 +91,25 @@
           </div>
       </div>
     </section>
-
-    <div class="divider-1"></div>
-
+    <section class="section" id="about">
+      <div class="container">
+          <h1 class="title text-center">O que fazemos</h1>
+          <p class="lead subtitle text-center">No mundo das tecnogias de ponta, atuamos em tecnologia da informação, desenvolvimento de software e hardware para todos os tipos de negócios.</p>
+          <p class="lead subtitle text-center">
+            Produzimos novas tecnologias que promovam soluções de problemas diversos em relação á tecnologia da informação, software e hardware, para com isso levarmos alivio ao sofrimento humano, prosperidade e principalmente a felicidade de viver em um mundo cada dia melhor e preservado.
+          </p>
+      </div>
+    </section>
+    <section class="section bg-primary text-light">
+      <div class="container">
+          <h1 class="title text-center">Como fazemos</h1>
+          <p class="lead subtitle text-center">No mundo das tecnogias de ponta, atuamos em tecnologia da informação, desenvolvimento de software e hardware para todos os tipos de negócios.</p>
+          <p class="lead subtitle text-center">
+            Produzimos novas tecnologias que promovam soluções de problemas diversos em relação á tecnologia da informação, software e hardware, para com isso levarmos alivio ao sofrimento humano, prosperidade e principalmente a felicidade de viver em um mundo cada dia melhor e preservado.
+          </p>
+      </div>
+    </section>
+</main>
     <!-- Optional JavaScript; choose one of the two! -->
 
     <!-- Option 1: Bootstrap Bundle with Popper -->

@@ -18,23 +18,21 @@
   --title-font-size: 4rem;
 }
 
-header {
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
-}
-
 .container {
   max-width: 1120px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.navegacao {
-  background-color: var(--base-second-color);
+.header {
+  background-color: var(--base-color);
   padding: 0.5rem;
   z-index: 100;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+  
 }
 
-header .logo {
+.header .logo {
   color: var(--white-color);
   font-family: var(--body-font);
 }
@@ -81,10 +79,8 @@ nav div .nav-link:hover::after {
 
 /* Seção Inicio */
 
-.inicio {
-  margin-top: 4.5rem;
-}
-.inicio{
+#home{
+  margin-top: 6rem;
   background: url(images/inicio.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -116,6 +112,9 @@ nav div .nav-link:hover::after {
 .btn-inicio:hover{
   background-color: var(--base-color);
 }
+
+/* seção de o que fazemos  */
+
 
 
 
