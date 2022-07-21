@@ -38,36 +38,66 @@ nav div .navbar-nav a {
   font: 400 1rem var(--body-font);
   color: var(--white-color);
 }
+
+/* Animação de botão do header */
+
 .btn-contact {
   font: 400 1rem var(--body-font);
   padding: 0.75rem;
-  background-color: var(--white-color);
   text-decoration: none;
   border-radius: 0.5rem;
-  color: var(--black-color);
+  color: var(--white-color);
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  border: 2px solid var(--white-color);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
+.btn-contact:hover {
+  color: var(--black-color);
+  background-color: transparent;
+}
+.btn-contact:hover:before {
+  left: 0%;
+  right: auto;
+  width: 100%;
+}
+.btn-contact:before {
+  display: block;
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+  height: 100%;
+  width: 0rem;
+  z-index: -1;
+  content: '';
+  color: var(--black-color);
+  background: var(--white-color);
+  transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+
 nav div .nav-link {
   position: relative;
   margin: 0 0.5rem;
-  /* color: var(--white-color); */
 }
 
 nav div .nav-link:hover {
   color: var(--white-color);
 }
 
-nav div .nav-link::after {
+nav div .nav-link:after {
   content: '';
   width: 0%;
   height: 3px;
   background-color: var(--white-color);
   left: 0%;
-  transition: 0.2s;
+  transition: 0.5s;
   position: absolute;
   bottom: 0rem;
 }
 
-nav div .nav-link:hover::after {
+nav div .nav-link:hover:after {
   width: 100%;
   color: var(--white-color);
 }
@@ -82,7 +112,7 @@ nav div .nav-link:hover::after {
 }
 
 #home .container {
-  padding: 6rem 0;
+  padding: 6rem 2rem;
 }
 
 /* configuração do h1 */
@@ -93,9 +123,10 @@ nav div .nav-link:hover::after {
   letter-spacing: -2px;
   margin-bottom: 2rem;
   margin-top: 50px;
-  font-weight: 800;
+  font-weight: 900;
   color: var(--white-color);
 }
+
 #home .subtitle {
   font-size: var(--subtitle-font-size);
   font-weight: 400;
@@ -110,18 +141,8 @@ nav div .nav-link:hover::after {
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
+  font-weight: bold;
 }
-
-/* .btn-home {
-  background-color: #0007e0;
-  color: #fff;
-  border-radius: 10px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 18px;
-  padding-left: 18px;
-  font-family: 'Public Sans';
-} */
 
 .btn-home:hover {
   background-color: var(--white-color);
@@ -129,20 +150,10 @@ nav div .nav-link:hover::after {
 }
 
 /* section about */
-#about {
-  padding: 5rem 0;
-}
 
-/* 
-.divider-1 {
-  height: 3px;
-  background: linear-gradient(
-    270deg,
-    hsla(300, 36%, 57%, 1) 0%,
-    hsla(300, 65%, 88%, 0.34) 100%
-  );
-  margin-bottom: 3rem;
-} */
+#about .container {
+  padding: 6rem 2rem;
+}
 
 @media (max-width: 992px) {
   header {
