@@ -75,7 +75,6 @@ nav div .nav-link:hover::after {
 /* Seção Inicio */
 
 #home {
-  margin-top: 3.75rem;
   background: url(images/fundoheader.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -106,14 +105,29 @@ nav div .nav-link:hover::after {
 }
 
 .btn-home {
-  background-color: var(--base-second-color);
+  background-color: var(--base-color);
   color: var(--white-color);
   padding: 0.75rem;
   border: none;
   border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
 }
-.btn-inicio:hover {
-  background-color: var(--base-color);
+
+/* .btn-home {
+  background-color: #0007e0;
+  color: #fff;
+  border-radius: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-right: 18px;
+  padding-left: 18px;
+  font-family: 'Public Sans';
+} */
+
+.btn-home:hover {
+  background-color: var(--white-color);
+  color: var(--black-color);
 }
 
 /* section about */
