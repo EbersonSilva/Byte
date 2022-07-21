@@ -10,12 +10,12 @@
   --black-color: #000;
   --white-color: #fff;
   --base-color: #0007e0;
-  --base-second-color:#0c8af7;
+  --base-second-color: #0c8af7;
 
   /* Font */
   --body-font: 'Public Sans', sans-serif;
   --subtitle-font-size: 1rem;
-  --title-font-size: 4rem;
+  --title-font-size: 3rem;
 }
 
 .container {
@@ -27,9 +27,7 @@
 .header {
   background-color: var(--base-color);
   padding: 0.5rem;
-  z-index: 100;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
-  
 }
 
 .header .logo {
@@ -40,8 +38,6 @@
 nav div .navbar-nav a {
   font: 500 1rem var(--body-font);
   color: var(--white-color);
-  
-
 }
 .btn-contact {
   font: 600 var(--subtitle-font-size) var(--body-font);
@@ -79,13 +75,13 @@ nav div .nav-link:hover::after {
 
 /* Seção Inicio */
 
-#home{
+#home {
   margin-top: 6rem;
   background: url(images/inicio.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+  border: 1px solid red;
 }
 
 /* configuração do h1 */
@@ -94,7 +90,7 @@ nav div .nav-link:hover::after {
   font-size: var(--title-font-size);
   line-height: 60px;
   letter-spacing: -2px;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-top: 50px;
   font-weight: 800;
 }
@@ -103,21 +99,21 @@ nav div .nav-link:hover::after {
   font-weight: 400;
 }
 
-.btn-inicio{
+.btn-inicio {
   background-color: var(--base-second-color);
   color: var(--white-color);
   padding: 0.75rem;
   border: none;
 }
-.btn-inicio:hover{
+.btn-inicio:hover {
   background-color: var(--base-color);
 }
 
-/* seção de o que fazemos  */
-
-
-
-
+/* section about */
+#about {
+  padding: 5rem 0;
+  border: 1px solid rebeccapurple;
+}
 
 /* 
 .divider-1 {
