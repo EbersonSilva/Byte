@@ -35,11 +35,11 @@
 }
 
 nav div .navbar-nav a {
-  font: 500 1rem var(--body-font);
+  font: 400 1rem var(--body-font);
   color: var(--white-color);
 }
 .btn-contact {
-  font: 600 var(--subtitle-font-size) var(--body-font);
+  font: 400 1rem var(--body-font);
   padding: 0.75rem;
   background-color: var(--white-color);
   text-decoration: none;
@@ -75,15 +75,15 @@ nav div .nav-link:hover::after {
 /* Seção Inicio */
 
 #home {
-  margin-top: 6rem;
-  background: url(images/inicio.png);
+  margin-top: 3.75rem;
+  background: url(images/fundoheader.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 /* configuração do h1 */
-.title {
+#home .title {
   font-family: var(--body-font);
   font-size: var(--title-font-size);
   line-height: 60px;
@@ -91,10 +91,12 @@ nav div .nav-link:hover::after {
   margin-bottom: 2rem;
   margin-top: 50px;
   font-weight: 800;
+  color: var(--white-color);
 }
-.subtitle {
+#home .subtitle {
   font-size: var(--subtitle-font-size);
   font-weight: 400;
+  color: var(--white-color);
 }
 
 .btn-home {
