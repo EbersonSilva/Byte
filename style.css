@@ -26,7 +26,6 @@
 
 .header {
   background-color: var(--base-color);
-  padding: 0.9rem;
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
 }
 
@@ -44,7 +43,7 @@ nav div .navbar-nav a {
   padding: 0.75rem;
   background-color: var(--white-color);
   text-decoration: none;
-  border-radius: 0.8rem;
+  border-radius: 0.5rem;
   color: var(--black-color);
 }
 nav div .nav-link {
@@ -98,11 +97,12 @@ nav div .nav-link:hover::after {
   font-weight: 400;
 }
 
-.btn-inicio {
+.btn-home {
   background-color: var(--base-second-color);
   color: var(--white-color);
   padding: 0.75rem;
   border: none;
+  border-radius: 0.5rem;
 }
 .btn-inicio:hover {
   background-color: var(--base-color);
