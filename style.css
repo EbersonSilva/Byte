@@ -54,6 +54,7 @@ nav div .navbar-nav a {
   border: 2px solid var(--white-color);
   transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
+
 .btn-contact:hover {
   color: var(--black-color);
   background-color: transparent;
@@ -160,7 +161,7 @@ nav div .nav-link:hover:after {
 
 #about .container {
   padding: 6rem 2rem;
-  /* margin-bottom: 4.5rem; */
+  margin-bottom: 4.5rem;
 }
 
 .col {
@@ -177,6 +178,10 @@ nav div .nav-link:hover:after {
   color: var(--black-color);
   text-align: center;
   margin-bottom: 2rem;
+}
+
+.section-2 .container {
+  padding: 6rem 2rem;
 }
 
 #about .subtitle {
@@ -199,9 +204,12 @@ nav div .nav-link:hover:after {
   color: var(--black-color);
 }
 
-.section-2 {
-  border: 1px solid red;
-  padding: 6rem 0;
+.section-2 .col {
+  display: flex;
+}
+
+.section-2 .img-about {
+  margin: auto;
 }
 
 @media (max-width: 992px) {
