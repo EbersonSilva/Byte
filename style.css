@@ -82,6 +82,12 @@ nav div .nav-link:hover::after {
   background-position: center;
 }
 
+#home .container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
 /* configuração do h1 */
 #home .title {
   font-family: var(--body-font);
