@@ -147,6 +147,7 @@ nav div .nav-link:hover:after {
 .btn-home:hover {
   background-color: var(--white-color);
   color: var(--black-color);
+  transition: 0.5s;
 }
 
 /* section about */
@@ -172,7 +173,8 @@ nav div .nav-link:hover:after {
   margin: auto;
 }
 
-#about .title {
+#about .title,
+#services .title {
   font: 700 var(--title-font-size) var(--body-font);
   letter-spacing: -2px;
   color: var(--black-color);
@@ -210,6 +212,36 @@ nav div .nav-link:hover:after {
 
 .section-2 .img-about {
   margin: auto;
+}
+
+/************ Section services ******************/
+
+#services {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(205, 205, 205, 1) 100%
+  );
+}
+#services .container {
+  padding: 6rem 2rem;
+}
+
+#services .title {
+  margin-bottom: 4rem;
+}
+#services .card {
+  border-radius: 0.5rem;
+  font: 400 var(--subtitle-font-size) var(--body-font);
+  text-align: justify;
+  border: none;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+}
+
+#services .card .card-title {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 992px) {
