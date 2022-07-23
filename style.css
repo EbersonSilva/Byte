@@ -272,13 +272,12 @@ nav div .nav-link:hover:after {
   height: 4rem;
 
   z-index: 1;
+  transition: all ease-in-out 1s;
 }
 
 .back-to-top:hover {
   color: var(--black-color);
   background: var(--white-color);
-  border: 1px solid black;
-  border-radius: 50%;
 }
 
 /*--------------------------------------------------------------
@@ -295,7 +294,7 @@ nav div .nav-link:hover:after {
   right: 1rem;
   bottom: 6rem;
   background: #25d366;
-  color: #fff;
+  color: var(--white-color);
   z-index: 1;
   transition: all ease-in-out 1s;
 }
