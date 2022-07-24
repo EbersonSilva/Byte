@@ -224,7 +224,8 @@ nav div .nav-link:hover:after {
     rgba(205, 205, 205, 1) 100%
   );
 }
-#services .container {
+#services .container,
+#contact .container {
   padding: 6rem 2rem;
 }
 
@@ -250,6 +251,10 @@ nav div .nav-link:hover:after {
   width: auto;
 }
 
+/* Seção contato */
+
+
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -263,13 +268,14 @@ nav div .nav-link:hover:after {
   bottom: 1rem;
 
   padding: 0.5rem;
+
   clip-path: circle();
 
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 0;
 
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
 
   z-index: 1;
   transition: all ease-in-out 1s;
@@ -286,13 +292,13 @@ nav div .nav-link:hover:after {
 .whatsapp-btn {
   position: fixed;
   clip-path: circle();
-  padding: 1rem;
-  font-size: 2rem;
+  padding: 0.75rem;
+  font-size: 1.5rem;
   line-height: 0;
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   right: 1rem;
-  bottom: 6rem;
+  bottom: 4.5rem;
   background: #25d366;
   color: var(--white-color);
   z-index: 1;
