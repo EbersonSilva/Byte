@@ -161,6 +161,7 @@ nav div .nav-link:hover:after {
   display: flex;
   align-items: center;
   font-weight: bold;
+  border: 1px solid var(--black-color);
 }
 
 .btn-home:hover {
@@ -279,6 +280,7 @@ nav div .nav-link:hover:after {
   margin-bottom: 1rem;
   font-weight: 300;
   font-family: 'Public Sans';
+  color: var(--black-color);
 }
 
 #services .card .card-img-top {
@@ -298,8 +300,11 @@ nav div .nav-link:hover:after {
 
 /* Footer */
 .footer{
-  height: 15rem;
-  background-color: var(--base-color);
+  background-color: #081768;
+}
+
+.footer h5, p{
+  color: var(--white-color);
 }
 
 
