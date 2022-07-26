@@ -15,11 +15,11 @@
   /* Font */
   --body-font: 'Public Sans', sans-serif;
   --subtitle-font-size: 1rem;
-  --title-font-size: 4rem;
+  --title-font-size: 3.5rem;
 }
 
 .container {
-  max-width: 1120px;
+  max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,7 +43,7 @@ nav div .navbar-nav a {
 
 .btn-contact {
   font: 400 1rem var(--body-font);
-  padding: 0.75rem;
+  padding: 0.7rem;
   text-decoration: none;
   border-radius: 0.5rem;
   color: var(--white-color);
@@ -51,7 +51,7 @@ nav div .navbar-nav a {
   cursor: pointer;
   display: block;
   position: relative;
-  border: 2px solid var(--white-color);
+  border: 1.5px solid var(--white-color);
   transition: all 0.5s cubic-bezier(0.42, 0, 0.58, 1) 0s;
 }
 
@@ -117,18 +117,37 @@ nav div .nav-link:hover:after {
 }
 
 /* configuração do h1 */
+@media (max-width: 567px) {
+  #home .title {
+    font-weight: 700;
+    font-family: 'Public Sans';
+    font-size: 2.8rem;
+    line-height: 40px;
+    letter-spacing: -2px;
+    margin-bottom: 2rem;
+    margin-top: 50px;
+    color: var(--white-color);
+  }}
+
+/* configuração do h1 */
+@media (min-width: 568px) {
 #home .title {
-  font: 700 var(--title-font-size) var(--body-font);
-  line-height: 60px;
+  font-weight: 700;
+  font-family: 'Public Sans';
+  font-size: 3.9rem;
+  line-height: 53px;
   letter-spacing: -2px;
   margin-bottom: 2rem;
   margin-top: 50px;
   color: var(--white-color);
-}
+}}
 
 #home .subtitle {
-  font: 400 var(--subtitle-font-size) var(--body-font);
-  opacity: 0.8;
+  font-weight: 400;
+  font-family: 'Public Sans';
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  margin-top: 50px;
   color: var(--white-color);
   text-align: justify;
 }
@@ -151,18 +170,17 @@ nav div .nav-link:hover:after {
 }
 
 /* section about */
-#about {
+.about {
   background: rgb(255, 255, 255);
   background: linear-gradient(
-    275deg,
+    180deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(205, 205, 205, 1) 100%
+    rgba(235, 235, 235, 1) 100%
   );
 }
 
 #about .container {
-  padding: 6rem 2rem;
-  margin-bottom: 4.5rem;
+  padding: 3rem 2rem;
 }
 
 .col {
@@ -216,12 +234,12 @@ nav div .nav-link:hover:after {
 
 /************ Section services *********************/
 
-#services {
+.services {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     45deg,
     rgba(255, 255, 255, 1) 0%,
-    rgba(205, 205, 205, 1) 100%
+    rgba(235, 235, 235, 1) 100%
   );
 }
 #services .container,
@@ -230,18 +248,18 @@ nav div .nav-link:hover:after {
 }
 
 #services .title {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
 }
 #services .card {
-  border-radius: 0.5rem;
+  border-radius: 5px;
   font: 400 var(--subtitle-font-size) var(--body-font);
   text-align: justify;
-  border: none;
-  padding: 1rem;
+  border: solid 1px #ccc;
+  transition: all 1s;
 }
 
 #services .card:hover{
-  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.6);
+  border-color: #0007e0;
   transform: scale(1.01);
   z-index: 1;
 
@@ -249,11 +267,29 @@ nav div .nav-link:hover:after {
 
 #services .card .card-title {
   text-align: center;
+  font-size: 1.3rem;
+  font-family: 'Public Sans';
+  font-weight: 800;
+  padding: 2px;
+}
+
+#services .card .card-text {
+  text-align: center;
+  font-size: 1rem;
   margin-bottom: 1rem;
+  font-weight: 300;
+  font-family: 'Public Sans';
+}
+
+#services .card .card-img-top {
+  height: 200px;
+  padding: 20px;
 }
 
 #services img {
   height: 15rem;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   width: auto;
 }
 
@@ -291,13 +327,26 @@ nav div .nav-link:hover:after {
   width: 3rem;
   height: 3rem;
 
-  z-index: 1;
+  z-index: 2;
   transition: all ease-in-out 1s;
 }
 
 .back-to-top:hover {
   color: var(--black-color);
   background: var(--white-color);
+}
+
+.back-to-top2 {
+  background: var(--white-color);
+  position: fixed;
+  right: 0.9rem;
+  bottom: 0.9rem;
+  clip-path: circle();
+  line-height: 0;
+  width: 3.2rem;
+  height: 3.2rem;
+  z-index: 1;
+  transition: all ease-in-out 1s;
 }
 
 /*--------------------------------------------------------------
@@ -315,13 +364,26 @@ nav div .nav-link:hover:after {
   bottom: 4.5rem;
   background: #25d366;
   color: var(--white-color);
-  z-index: 1;
+  z-index: 2;
   transition: all ease-in-out 1s;
 }
+
 
 .whatsapp-btn:hover {
   color: #fff;
   background: #14a326;
+}
+
+.whatsapp-btn2 {
+  background: var(--white-color);
+  position: fixed;
+  right: 0.9rem;
+  bottom: 4.4rem;
+  clip-path: circle();
+  width: 3.2rem;
+  height: 3.2rem;
+  z-index: 1;
+  transition: all ease-in-out 1s;
 }
 
 @media (max-width: 992px) {
