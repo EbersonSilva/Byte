@@ -166,17 +166,18 @@ nav div .nav-link:hover:after {
   background-color: var(--base-color);
   color: var(--white-color);
   padding: 1rem;
-  border: none;
   border-radius: 0.5rem;
   display: flex;
   align-items: center;
   font-weight: bold;
   margin-top: 3rem;
+  border: 1px solid transparent;
 }
 .btn-about:hover {
   background-color: var(--white-color);
   color: var(--black-color);
   transition: all 0.5s;
+  border-color: var(--black-color);
 }
 
 #about .img-about {
@@ -203,8 +204,7 @@ nav div .nav-link:hover:after {
 
 /****************** Seção Serviços *********************/
 
-#services .container,
-#contact .container {
+#services .container {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
   max-width: 1100px;
@@ -305,6 +305,12 @@ nav div .nav-link:hover:after {
 
 /*********************** Seção contato* *****************************/
 
+#contact .container {
+  margin: 0 auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
 #contact textarea {
   height: 3rem;
 }
@@ -326,18 +332,42 @@ nav div .nav-link:hover:after {
   padding: 1rem;
 }
 
+#contact iframe {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+#contact .row {
+  padding: 1rem;
+}
+
 #contact p {
   color: var(--black-color);
 }
 
-/* Footer */
+/************* Footer  *******************/
+
 .footer {
   background-color: #081768;
 }
+.footer .row {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.footer .divider {
+  width: 90%;
+  height: 1px;
+  background-color: var(--white-color);
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
 
-.footer h5,
+.footer h2,
 .footer p {
   color: var(--white-color);
+  text-align: center;
 }
 
 /*--------------------------------------------------------------
@@ -448,7 +478,13 @@ nav div .nav-link:hover:after {
   }
 }
 
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   header .btn-menu {
     background-color: var(--white-color);
     color: var(--black-color);
@@ -456,5 +492,26 @@ nav div .nav-link:hover:after {
 
   header .btn-contact {
     display: inline-block;
+  }
+
+  nav div .nav-link:hover:after {
+    width: 15%;
+    color: var(--white-color);
+  }
+
+  #services .card {
+    width: 90%;
+    margin: 0 auto;
+  }
+  #services .card img {
+    object-fit: cover;
+  }
+
+  #contact .form-box {
+    margin-bottom: 2rem;
+  }
+
+  #contact .map {
+    height: 20rem;
   }
 }
