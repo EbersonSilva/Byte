@@ -2,16 +2,16 @@
 
 const scrollReveal = ScrollReveal({
   origin: 'top',
-  distance: '60px',
+  distance: '30px',
   duration: 700,
   reset: true
 })
 
-scrollReveal.reveal('#services .card', { interval: 100 })
+scrollReveal.reveal('#services .card', { interval: 300 })
 
 const scrollRevealLeft = ScrollReveal({
   origin: 'left',
-  distance: '100px',
+  distance: '60px',
   duration: 700,
   reset: true
 })
@@ -24,12 +24,12 @@ scrollRevealLeft.reveal(
   #cta h1, 
   #contact .form-box
   `,
-  { interval: 100 }
+  { interval: 300 }
 )
 
 const scrollRevealRight = ScrollReveal({
   origin: 'right',
-  distance: '100px',
+  distance: '60px',
   duration: 700,
   reset: true
 })
@@ -44,5 +44,5 @@ scrollRevealRight.reveal(
   #contact .map,
   footer form
   `,
-  { interval: 100 }
+  { interval: 300 }
 )
